@@ -1,0 +1,29 @@
+main{
+    float: left;
+    position: absolute;
+    top: 35%;
+    left: 11%;
+    text-align: center;
+    width: 75%;
+    font-family: Arial, sans-serif;
+}
+img.background {
+  filter: alpha(Opacity=20);
+  opacity: 0.2;
+  pointer-events: none;
+  height: 20%;
+  width: 20%;
+  height: auto;
+  width: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  /* Зависит от размера изображения */
+  @media screen and (max-width: 640px){
+	img.bg {
+	  left: 50%;
+	  margin-left: -320px;
+	}
+  }
+}
