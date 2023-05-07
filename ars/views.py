@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Objects
 
 
 def index(request):
@@ -6,7 +7,9 @@ def index(request):
 
 
 def objects(request):
-    return render(request, "ars/objects.html")
+    works = Objects.objects.all()
+    data = {"objects": works}
+    return render(request, "ars/objects.html", data)
 
 
 def contacts(request):

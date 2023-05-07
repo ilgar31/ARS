@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/objects.css' %}">
     <title>{% block title %}{% endblock %}</title>
 </head>
-<body>
+<body  class="background-image" style="background: url({% static 'png/image.png' %})" >
 <div class="header">
   <a href="{% url 'home' %}" class="logo"><img src="{% static 'png/log.png' %}"></a>
     <div class="header-right">
@@ -22,9 +22,10 @@
 </div>
 
 <main>
-<img src="{% static 'png/image.png' %}"  class="background">
-{% block content %}
-{% endblock %}
+<div>
+    {% block content %}
+    {% endblock %}
+</div>
 </main>
 
 </body>
