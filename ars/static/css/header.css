@@ -38,6 +38,33 @@
   float: right;
 }
 
+
+
+.container {
+    position: absolute;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20vw;
+}
+
+
+.object {
+    background-color: #7B8DBC;
+    height: 250px;
+    width: 350px;
+    border-radius: 10px;
+}
+
+.img_object {
+    margin-top: 10px;
+}
+
+.img_data {
+    width: 300px;
+    margin-top: 15 px;
+}
+
 @media screen and (max-width: 500px) {
   .header a {
     float: none;
@@ -48,5 +75,9 @@
   }
   .header-right {
     float: none;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
   }
 }

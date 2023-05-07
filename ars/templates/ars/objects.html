@@ -6,11 +6,14 @@ ARS
 {% endblock %}
 
 {% block content %}
+{% load static %}
 <h1>НАШИ РАБОТЫ</h1>
 <div class="container">
     {% for object in objects %}
-        <p>{{ object.name }}</p><br>
-        <p>{{ object.city }}</p>
+        <div class="object">
+            <div class="img_object"><img src="{% static object.photo %}" class="img_data"></div>
+            <p>{{ object }}</p>
+        </div>
     {% endfor %}
 </div>
 {% endblock %}
