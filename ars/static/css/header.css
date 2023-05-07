@@ -20,6 +20,7 @@
 .header a.logo {
   font-size: 25px;
   font-weight: bold;
+  margin-top: -12px;
 }
 
 .header a:hover {
@@ -45,16 +46,4 @@
   .header-right {
     float: none;
   }
-}
-.main{
-    float: left;
-    color: blue;
-    position: absolute;
-    top: 35%;
-    left: 11%;
-    text-align: center;
-    width: 75%;
-}
-.main h1{
-    font-family: Arial, sans-serif;
 }
