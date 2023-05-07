@@ -12,7 +12,8 @@ ARS
     {% for object in objects %}
         <div class="object">
             <div class="img_object"><img src="{% static object.photo %}" class="img_data"></div>
-            <p>{{ object }}</p>
+            <p class="object_name">{{ object }}</p>
+            <a href="{% url 'object' object.id_object %}" ><div class="more">Подробнее</div></a>
         </div>
     {% endfor %}
 </div>

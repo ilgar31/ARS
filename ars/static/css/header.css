@@ -14,7 +14,7 @@
   text-decoration: none;
   font-size: 18px;
   line-height: 25px;
-  border-radius: 4px;
+  border-radius: 10px;
   margin-left: 10px;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .header a.active {
-  background-color: #7B8DBC;
+  background-color: #5e95b5;
   color: white;
 }
 
@@ -45,24 +45,56 @@
     margin-top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20vw;
+    grid-gap: 12vw;
 }
 
 
 .object {
-    background-color: #7B8DBC;
-    height: 250px;
+    background-color: #5e95b5;
+    height: 300px;
     width: 350px;
     border-radius: 10px;
+    border: solid;
+    border-color: #89c6e8;
 }
 
 .img_object {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .img_data {
-    width: 300px;
+    height: 195px;
     margin-top: 15 px;
+    border-radius: 3px;
+    border: solid;
+    border-color: #c7d4dd;
+}
+
+.object_name{
+    font-family: Arial, sans-serif;
+    margin-top: -13px;
+    color: white;
+    padding: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.object a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.more {
+    background-color: #3c7391;
+    border-radius: 10px;
+    padding: 5px;
+    width: 125px;
+    border: solid;
+    margin: auto;
+    margin-top: -28px;
+    border-color: #2a5065;
 }
 
 @media screen and (max-width: 500px) {
