@@ -1,15 +1,23 @@
 main{
     float: left;
     position: absolute;
-    top: 40%;
+    top: 20%;
     left: 11%;
     text-align: center;
     width: 75%;
     font-family: Arial, sans-serif;
 }
 
+.main {
+    margin-top: 20%;
+}
+
 @media screen and (max-width: 500px) {
     main{
+        top: 50%;
         font-size: 14px;
+    }
+    .main {
+        margin-top: 20%;
     }
 }

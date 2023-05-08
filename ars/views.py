@@ -18,7 +18,7 @@ def objects(request):
 
 def object(request, pk):
     work = Objects.objects.get(id_object=pk)
-    data = {"object": work}
+    data = {"object": work, "list": [1], "img": [str(work.photo)]}
     return render(request, "ars/object.html", data)
 
 

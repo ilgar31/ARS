@@ -38,16 +38,16 @@
   float: right;
 }
 
-
-
-.container {
-    position: absolute;
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 12vw;
+.main {
+    margin-top: 20%;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10vw;
+    grid-row-gap: 5vw;
+}
 
 .object {
     background-color: #5e95b5;
@@ -64,6 +64,7 @@
 
 .img_data {
     height: 195px;
+    max-width: 335px;
     margin-top: 15 px;
     border-radius: 3px;
     border: solid;
@@ -111,5 +112,36 @@
 
   .container {
     grid-template-columns: 1fr;
+  }
+
+  .object {
+        background-color: #5e95b5;
+        height: 255px;
+        width: 300px;
+        border-radius: 10px;
+        border: solid;
+        border-color: #89c6e8;
+  }
+  .img_object {
+        margin-top: 5px;
+  }
+
+  .img_data {
+        height: 170px;
+        max-width: 285px;
+        margin-top: 5px;
+        border-radius: 3px;
+        border: solid;
+        border-color: #c7d4dd;
+  }
+
+  .object_name{
+        font-family: Arial, sans-serif;
+        margin-top: -13px;
+        color: white;
+        padding: 20px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
   }
 }
