@@ -9,7 +9,7 @@ ARS
 {% load static %}
 <h1>{{ object.name }}</h1>
 <div class="more_img"><img src="{% static object.photo %}" class="img_in_more"></div>
-<p style="font-weight: 600;">Город:   {{ object.city }}</p>
+<p style="font-weight: 600;margin-top: 40px;">Город:   {{ object.city }}</p>
 <p style="font-weight: 600;">Описание объекта:   {{ object.description }}</p>
 <p style="font-weight: 600;">Адрес:   {{ object.address }}</p>
 {% endblock %}
