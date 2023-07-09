@@ -50,12 +50,12 @@
 }
 
 .object {
-    background-color: #5e95b5;
+    background-color: #d5e2e9;
     height: 300px;
     width: 350px;
     border-radius: 10px;
     border: solid;
-    border-color: #89c6e8;
+    border-color: #717b81;
 }
 
 .img_object {
@@ -74,7 +74,7 @@
 .object_name{
     font-family: Arial, sans-serif;
     margin-top: -13px;
-    color: white;
+    color: black;
     padding: 20px;
     white-space: nowrap;
     overflow: hidden;
@@ -82,20 +82,20 @@
 }
 
 .object a{
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
 
 .more {
-    background-color: #3c7391;
+    background-color: #d5e2e9;
     border-radius: 10px;
     padding: 5px;
     width: 125px;
     border: solid;
     margin: auto;
     margin-top: -28px;
-    border-color: #2a5065;
+    border-color: #717b81;
 }
 
 @media screen and (max-width: 500px) {
@@ -115,12 +115,10 @@
   }
 
   .object {
-        background-color: #5e95b5;
         height: 255px;
         width: 300px;
         border-radius: 10px;
         border: solid;
-        border-color: #89c6e8;
   }
   .img_object {
         margin-top: 5px;
@@ -138,7 +136,7 @@
   .object_name{
         font-family: Arial, sans-serif;
         margin-top: -13px;
-        color: white;
+        color: black;
         padding: 20px;
         white-space: nowrap;
         overflow: hidden;
