@@ -119,8 +119,6 @@
   .object {
         height: 255px;
         width: 300px;
-        border-radius: 10px;
-        border: solid;
   }
   .img_object {
         margin-top: 5px;
