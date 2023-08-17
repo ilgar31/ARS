@@ -16,11 +16,28 @@
 </head>
 <body>
 
-<div class="head">
-    <a href="{% url 'home' %}" class="logo"><img src="{% static 'png/logo.png' %}" style="height: 60px;"></a>
+<div class="web_head">
+    <a href="{% url 'home' %}" class="logo"><img src="{% static 'png/logo.png' %}" class="logo_img"></a>
     <a href="{% url 'home' %}" class="link">О нас</a>
     <a href="{% url 'home' %}" class="link">Наши объекты</a>
     <a href="{% url 'home' %}" class="link">Опалубка</a>
+    <number>+7 (999) 999 99 99</number>
+    <div class="web_time">
+        <img src="{% static 'png/work_time.png' %}" style="float: left;margin-top: 15px;margin-right: 10px;">
+        <p>На связи с 8 до 21</p>
+    </div>
+</div>
+
+<div class="mobile_head">
+    <a href="{% url 'home' %}" class="logo"><img src="{% static 'png/logo.png' %}" class="logo_img"></a>
+    <div class="mobile_number">
+        <number>+7 (999) 999 99 99</number>
+        <div class="mobile_time">
+            <img src="{% static 'png/work_time.png' %}" style="float: left;margin-top: 4px;margin-right: 10px;">
+            <p>На связи с 8 до 21</p>
+        </div>
+    </div>
+    <span><img src="{% static 'png/menu.png' %}" alt=""></span>
 </div>
 
 {% block content %}
