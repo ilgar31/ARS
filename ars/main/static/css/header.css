@@ -36,7 +36,7 @@ body {
     text-decoration: none;
 }
 
-number {
+.number {
     margin-left: 30%;
     display: inline;
     color: black;
@@ -89,8 +89,44 @@ span {
     cursor: pointer;
 }
 
+.nav {
+    height: 110px;
+    position: absolute;
+    top: 70px;
+    width: 90%;
+    left: 5%;
+    text-align: center;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 3px 5px 1px rgb(180 180 180 / 20%);
+    opacity: 0;
+    transition: .4s ease-in-out;
+}
+
+.nav ul{
+	list-style: none;
+}
+
+.nav a {
+    color: black;
+    text-decoration: none;
+    font-family: Inter, sans-serif;
+}
+
+.nav li {
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.second {
+    padding-inline-start: 0;
+    margin-block-start: 13px;
+}
+
+
 @media screen and (max-width: 1780px){
-    number {
+    .number {
         margin-left: 25%;
     }
 
@@ -100,7 +136,7 @@ span {
 }
 
 @media screen and (max-width: 1580px){
-    number {
+    .number {
         margin-left: 20%;
     }
 
@@ -110,7 +146,7 @@ span {
 }
 
 @media screen and (max-width: 1400px){
-    number {
+    .number {
         margin-left: 15%;
     }
 
@@ -120,7 +156,7 @@ span {
 }
 
 @media screen and (max-width: 1280px){
-    number {
+    .number {
         margin-left: 10%;
     }
 
@@ -148,7 +184,7 @@ span {
         height: 70px;
     }
 
-    number {
+    .number {
         margin-left: 0px;
         font-size: 13px;
     }
@@ -161,6 +197,9 @@ span {
     }
     .mobile_head {
         height: 60px;
+    }
+    .nav {
+        top: 60px;
     }
 }
 
@@ -200,3 +239,5 @@ span {
         right: 5px;
     }
 }
+
+

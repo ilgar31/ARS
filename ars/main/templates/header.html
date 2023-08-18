@@ -8,9 +8,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preconnect" href="https://rsms.me/">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <link rel="stylesheet" type="text/css" href="{% static 'css/header.css' %}">
     {% block link %}{% endblock %}
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="{% static 'js/head.js' %}" defer></script>
     {% block script %}{% endblock %}
     <title>{% block title %}{% endblock %}</title>
 </head>
@@ -21,7 +23,7 @@
     <a href="{% url 'home' %}" class="link">О нас</a>
     <a href="{% url 'home' %}" class="link">Наши объекты</a>
     <a href="{% url 'home' %}" class="link">Опалубка</a>
-    <number>+7 (999) 999 99 99</number>
+    <a href="tel:+79999999999" class="number">+7 (999) 999 99 99</a>
     <div class="web_time">
         <img src="{% static 'png/work_time.png' %}" style="float: left;margin-top: 15px;margin-right: 10px;">
         <p>На связи с 8 до 21</p>
@@ -31,13 +33,20 @@
 <div class="mobile_head">
     <a href="{% url 'home' %}" class="logo"><img src="{% static 'png/logo.png' %}" class="logo_img"></a>
     <div class="mobile_number">
-        <number>+7 (999) 999 99 99</number>
+        <a href="tel:+79999999999" class="number">+7 (999) 999 99 99</a>
         <div class="mobile_time">
             <img src="{% static 'png/work_time.png' %}" style="float: left;margin-top: 4px;margin-right: 10px;">
             <p>На связи с 8 до 21</p>
         </div>
     </div>
-    <span><img src="{% static 'png/menu.png' %}" alt=""></span>
+    <span id="menu"><img src="{% static 'png/menu.png' %}" alt=""></span>
+    <nav id = "nav" class="nav">
+        <ul class = "second">
+            <li><a href = "#">О нас</a></li>
+            <li><a href = "#">Наши объекты</a></li>
+            <li><a href = "#">Опалубка</a></li>
+        </ul>
+    </nav>
 </div>
 
 {% block content %}

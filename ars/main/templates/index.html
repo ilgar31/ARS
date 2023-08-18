@@ -6,13 +6,43 @@
 {% endblock %}
 
 {% block title %}
-Главная страница
+АРС - строим будущее
 {% endblock %}
 
 
 {% block content %}
 
-<div class="container">
+<div class="web_container">
+    <div class="data">
+        <h1>СТРОИМ НАДЁЖНЫЕ ДОМА, В КОТОРЫХ ХОЧЕТСЯ ЖИТЬ</h1>
+        <div class="form">
+            <p>Хотите обсудить проект? Оставьте свои данные и мы перезвоним</p>
+            <form method="POST">
+                {% csrf_token %}
+                <input type="text" class="call_me" placeholder="Ваше имя">
+                <input type="text" class="call_me" placeholder="Телефон">
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
 
+    <img src="{% static 'png/foto1.png' %}" class="foto1">
+</div>
+
+<div class="mobile_container">
+    <img src="{% static 'png/foto1.png' %}" class="mobile_foto1">
+
+    <div class="mobile_data">
+        <h1>СТРОИМ НАДЁЖНЫЕ ДОМА, В КОТОРЫХ ХОЧЕТСЯ ЖИТЬ</h1>
+        <div class="mobile_form">
+            <p>Хотите обсудить проект? Оставьте свои данные и мы перезвоним</p>
+            <form method="POST">
+                {% csrf_token %}
+                <input type="text" placeholder="Ваше имя">
+                <input type="text" placeholder="Телефон">
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
 </div>
 {% endblock %}
