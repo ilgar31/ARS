@@ -55,6 +55,7 @@
     border-radius: 10px;
     background-color: #FFAB1C;
     text-align: center;
+    cursor: pointer;
 }
 
 .mobile_container {
@@ -82,15 +83,15 @@
     margin-top: 10px;
     font-family: Inter, sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 25px;
     margin-block-start: 1em;
     margin-block-end: 1em;
 }
 
 .mobile_form {
     font-family: Inter, sans-serif;
-    font-size: 14px;
-    margin: 20px auto;
+    font-size: 17px;
+    margin: 30px auto;
     width: 100%;
     background-color: #E9E9E9;
     border-radius: 15px;
@@ -114,6 +115,7 @@
     border-radius: 10px;
     background-color: #FFAB1C;
     text-align: center;
+    cursor: pointer;
 }
 
 
@@ -160,6 +162,10 @@
         padding: 1px 0px 10px 0px;
     }
 
+    .mobile_data h1 {
+        font-size: 20px;
+    }
+
     .mobile_form input {
         width: 75%;
         margin-bottom: 10px;
@@ -168,7 +174,14 @@
         margin-right: 0px;
         border-radius: 10px;
         padding-left: 15px;
-        color: #5F5F5F
+        color: #5F5F5F;
+        font-size: 12px;
+    }
+
+    .mobile_form button {
+        width: 45%;
+        height: 35px;
+        font-size: 12px;
     }
 }
 
@@ -176,18 +189,249 @@
     .mobile_form input {
         height: 35px;
         padding-left: 10px;
+        font-size: 10px;
+    }
+
+    .mobile_form {
+        font-size: 10px;
     }
 
     .mobile_form button {
         width: 45%;
         height: 35px;
+        font-size: 10px;
     }
+}
+
+
+.web_info {
+    width: 80%;
+    overflow: hidden;
+    margin-left: 10%;
+    background-color: white;
+    margin-top: 50px;
+    border-radius: 25px;
+    display: inline-block;
+}
+
+.about {
+    float: left;
+    width: 40%;
+}
+
+.about h1 {
+    margin-top: 40px;
+    margin-left: 50px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.about p {
+    margin-top: 40px;
+    margin-left: 50px;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    margin-block-start: 10px;
+}
+
+.director {
+    float: right;
+    width: 55%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.director img {
+    width: 250px;
+    margin: 40px auto;
+}
+
+.director_title {
+    margin-top: 100px;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.director_name {
+    margin-top: 0px;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.about_director {
+    margin-top: 20px;
+    font-family: Inter, sans-serif;
+    font-size: 17.5px;
+}
+
+
+.mobile_info {
+    max-width: 850px;
+    width: 90%;
+    background-color: white;
+    margin: -70px auto;
+    border-radius: 25px;
+    display: none;
+    overflow: hidden;
+}
+
+
+.mobile_about {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.mobile_about h1 {
+    margin-top: 40px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.mobile_about p {
+    margin-top: 40px;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    margin-block-start: 10px;
+}
+
+.mobile_director {
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+    margin-top: 25px;
+    padding-bottom: 20px;
+}
+
+.mobile_director img {
+    width: 40%;
+    margin-top: 15px;
+}
+
+.mobile_director_title {
+    margin-top: 50px;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.mobile_director_name {
+    margin-top: 5px;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.mobile_about_director {
+    margin-top: 20px;
+    font-family: Inter, sans-serif;
+    font-size: 17.5px;
 }
 
 
 
 
+@media screen and (max-width: 1520px){
+    .web_info {
+        display: none;
+    }
 
+    .mobile_info {
+        display: block;
+    }
+}
 
+@media screen and (max-width: 800px){
+    .mobile_about h1 {
+        margin-top: 30px;
+        font-size: 35px;
+    }
 
+    .mobile_about p {
+        margin-top: 20px;
+        font-size: 17px;
+        margin-block-start: 10px;
+    }
 
+    .mobile_director_title {
+        margin-top: 30px;
+        font-size: 25px;
+    }
+
+    .mobile_director_name {
+        margin-top: 5px;
+        font-size: 20px;
+    }
+
+    .mobile_about_director {
+        margin-top: 15px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .mobile_about h1 {
+        margin-top: 25px;
+        font-size: 30px;
+    }
+
+    .mobile_about p {
+        margin-top: 17px;
+        font-size: 15px;
+        margin-block-start: 5px;
+    }
+
+    .mobile_director_title {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    .mobile_director_name {
+        margin-top: 5px;
+        font-size: 17.5px;
+    }
+
+    .mobile_about_director {
+        margin-top: 13px;
+        font-size: 12px;
+    }
+
+    .mobile_director img {
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .mobile_about h1 {
+        margin-top: 17px;
+        font-size: 20px;
+    }
+
+    .mobile_about p {
+        margin-top: 13px;
+        font-size: 12px;
+        margin-block-start: 5px;
+    }
+
+    .mobile_director_title {
+        margin-top: 15px;
+        font-size: 15px;
+    }
+
+    .mobile_director_name {
+        margin-top: 5px;
+        font-size: 14px;
+    }
+
+    .mobile_about_director {
+        margin-top: 11px;
+        font-size: 11px;
+    }
+
+    .mobile_director img {
+        margin-top: 3px;
+    }
+}
