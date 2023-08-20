@@ -270,17 +270,58 @@
     <img src="{% static 'png/foto2.png' %}" class="foto2">
 
     <div class="data2">
+            <h1>Построим дом вашей мечты вместе?</h1>
+            <p>Оставьте свои контактные данные, чтобы мы связались с вами и ответили на все интересующие вас вопросы</p>
+            <div class="form2">
+                <form method="POST">
+                    {% csrf_token %}
+                    <input type="text" class="call_me2" placeholder="Ваше имя">
+                    <input type="text" class="call_me2" placeholder="Телефон">
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+    </div>
+</div>
+
+
+<div class="mobile_container2">
+    <div class="mobile_data2">
+        <img src="{% static 'png/foto2.png' %}" class="mobile_foto2">
         <h1>Построим дом вашей мечты вместе?</h1>
         <p>Оставьте свои контактные данные, чтобы мы связались с вами и ответили на все интересующие вас вопросы</p>
-        <div class="form2">
-            <form method="POST">
-                {% csrf_token %}
-                <input type="text" class="call_me2" placeholder="Ваше имя">
-                <input type="text" class="call_me2" placeholder="Телефон">
-                <button type="submit">Отправить</button>
-            </form>
-        </div>
     </div>
+
+    <div class="mobile_form2">
+        <form method="POST">
+            {% csrf_token %}
+            <input type="text" class="mobile_call_me2" placeholder="Ваше имя"><br>
+            <input type="text" class="mobile_call_me2" placeholder="Телефон"><br>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+</div>
+
+
+
+
+<div class="web_bottom">
+    <div class="bottom_data1">
+        <img src="{% static 'png/logo.png' %}" class="logo_bottom">
+        <p>© 2004-2023 ООО «АРС»</p>
+        <p>Все права защищены</p>
+    </div>
+
+    <div class="bottom_data2">
+        <p>Наш офис в Ярославле</p>
+        <p style="color: black;">ул. Свободы, д99</p>
+    </div>
+
+    <div class="bottom_data3">
+        <p>Свяжитесь с нами</p>
+        <a href="tel:+79999999999" class="number_bottom">+7 (999) 999 99 99</a><br>
+        <a href="mailto:example@mail.ru" class="email_bottom">example@mail.ru</a>
+    </div>
+
 </div>
 
 {% endblock %}
