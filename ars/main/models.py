@@ -2,7 +2,7 @@ from django.db import models
 
 
 def img_save(instance, filename):
-    return f'main/png/items/item_{instance.item.id}/{filename}'
+    return f'png/items/item_{instance.object.id}/{filename}'
 
 
 class Object(models.Model):

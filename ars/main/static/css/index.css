@@ -372,7 +372,7 @@
     }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 600px){
     .mobile_about h1 {
         margin-top: 25px;
         font-size: 30px;
@@ -434,4 +434,456 @@
     .mobile_director img {
         margin-top: 3px;
     }
+}
+
+
+
+
+
+
+
+
+
+.web_projects {
+    width: 80%;
+    overflow: hidden;
+    margin-left: 10%;
+    background-color: white;
+    margin-top: 50px;
+    border-radius: 25px;
+}
+
+.projects_title {
+    display: inline-block;
+    width: 100%;
+}
+
+.projects_title h1 {
+    float: left;
+    margin-top: 40px;
+    margin-left: 50px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.projects_title p {
+    float: right;
+    margin-left: 50px;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    margin-block-start: 50px;
+    width: 450px;
+}
+
+.projects {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(45%, 45%));
+    grid-column-gap: 70px;
+    grid-row-gap: 30px;
+    justify-content: center;
+}
+
+.project {
+    width: 90%;
+    margin-left: 5%;
+    overflow: hidden;
+}
+
+.project_img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.project_data {
+    display: inline-block;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.project_name {
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    margin-block-start: 10px;
+    margin-left: -10px;
+    margin-block-end: 0;
+}
+
+.city_png {
+    display: inline;
+}
+
+.project_city {
+    margin-left: 10px;
+    font-family: Inter, sans-serif;
+    font-size: 15px;
+    display: inline;
+}
+
+.floor_png {
+    margin-left: 30px;
+    display: inline;
+}
+
+.project_floor {
+    margin-left: 10px;
+    font-family: Inter, sans-serif;
+    font-size: 15px;
+    display: inline;
+}
+
+.project_page {
+    color: black;
+    text-decoration: none;
+}
+
+.web_projects button {
+    width: 90%;
+    height: 45px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #FFAB1C;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 5%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.web_arenda {
+    width: 80%;
+    overflow: hidden;
+    margin-left: 10%;
+    background-color: white;
+    margin-top: 50px;
+    border-radius: 25px;
+    font-family: Inter, sans-serif;
+    text-align: center;
+}
+
+.arenda_title {
+    display: inline-block;
+    width: 100%;
+}
+
+.arenda_title h1 {
+    float: left;
+    margin-top: 40px;
+    margin-left: 50px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.arenda_title p {
+    float: right;
+    margin-left: 50px;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    margin-block-start: 50px;
+    width: 450px;
+}
+
+.arenda1 {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 30%));
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    justify-content: center;
+}
+
+.arenda2 {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40%, 40%));
+    grid-column-gap: 70px;
+    grid-row-gap: 30px;
+    justify-content: center;
+}
+
+.item {
+    border: solid 2px #FFAB1C;
+    border-radius: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: ease 1s;
+}
+
+.item:hover {
+    -webkit-box-shadow:inset 0px 0px 0px 15px #FFBA45;
+    -moz-box-shadow:inset 0px 0px 0px 15px #FFBA45;
+    box-shadow:inset 0px 0px 0px 15px #FFBA45;
+}
+
+.item img {
+    max-width: 95%;
+    height: 335px;
+}
+
+
+
+
+
+.mobile_arenda {
+    width: 90%;
+    overflow: hidden;
+    margin-left: 5%;
+    background-color: white;
+    margin-top: 50px;
+    border-radius: 25px;
+    font-family: Inter, sans-serif;
+    text-align: center;
+    display: none;
+}
+
+.mobile_arenda_title {
+    text-align: left;
+    display: block;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.mobile_arenda_title h1 {
+    margin-top: 30px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.mobile_arenda_title p {
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    margin-block-start: 20px;
+    width: 450px;
+}
+
+.mobile_arenda p {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.mobile_arenda1 {
+    margin-top: 40px;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.mobile_item {
+    border: solid 2px #FFAB1C;
+    border-radius: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: ease 1s;
+    margin-bottom: 15px;
+}
+
+.mobile_item:hover {
+    -webkit-box-shadow:inset 0px 0px 0px 5px #FFBA45;
+    -moz-box-shadow:inset 0px 0px 0px 5px #FFBA45;
+    box-shadow:inset 0px 0px 0px 5px #FFBA45;
+}
+
+.mobile_item img {
+    max-width: 95%;
+    height: 350px;
+}
+
+
+
+
+@media screen and (max-width: 1520px){
+    .web_arenda {
+        display: none;
+    }
+
+    .mobile_arenda {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .mobile_arenda_title h1 {
+        margin-top: 30px;
+        font-size: 35px;
+    }
+
+    .mobile_arenda_title p {
+        margin-top: 20px;
+        font-size: 17px;
+        margin-block-start: 10px;
+    }
+
+    .opalubka {
+        margin-top: 30px;
+        font-size: 25px;
+    }
+
+    .mobile_arenda p {
+        font-size: 14px;
+    }
+
+    .mobile_item img {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .mobile_arenda_title h1 {
+        font-size: 30px;
+    }
+
+    .mobile_arenda_title p {
+        margin-top: 15px;
+        font-size: 15px;
+        margin-block-start: 7px;
+    }
+
+    .opalubka {
+        margin-top: 25px;
+        font-size: 20px;
+    }
+
+    .mobile_arenda1 {
+        margin-top: 20px;
+    }
+
+    .mobile_arenda p {
+        font-size: 12px;
+    }
+
+    .mobile_item img {
+        height: 220px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .mobile_arenda_title h1 {
+        margin-top: 17px;
+        font-size: 20px;
+    }
+
+    .mobile_arenda_title p {
+        margin-top: 13px;
+        font-size: 11px;
+        margin-block-start: 5px;
+    }
+
+    .opalubka {
+        margin-top: 15px;
+        font-size: 15px;
+    }
+
+    .mobile_arenda1 {
+        margin-top: 15px;
+    }
+
+    .mobile_arenda p {
+        font-size: 11px;
+    }
+
+    .mobile_item img {
+        height: 150px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.web_container2 {
+    width: 80%;
+    height: 400px;
+    margin-left: 10%;
+    background-color: white;
+    margin-top: 120px;
+    border-radius: 25px;
+    display: inline-block;
+}
+
+.data2 {
+    float: left;
+    width: 545px;
+}
+
+.data2 h1 {
+    margin-top: 60px;
+    margin-left: 50px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.foto2 {
+    object-fit: cover;
+    border-radius: 25px;
+    float: right;
+}
+
+.form2 {
+    font-family: Inter, sans-serif;
+    font-size: 15px;
+    margin-top: 300px;
+    margin-left: 50px;
+    width: 530px;
+    background-color: #E9E9E9;
+    border-radius: 15px;
+    padding: 1px 0px 20px 15px;
+}
+
+.form2 input {
+    width: 130px;
+    height: 45px;
+    border: 0;
+    margin-right: 30px;
+    border-radius: 10px;
+    padding-left: 15px;
+    color: #5F5F5F
+}
+
+.form2 button {
+    width: 150px;
+    height: 45px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #FFAB1C;
+    text-align: center;
+    cursor: pointer;
 }

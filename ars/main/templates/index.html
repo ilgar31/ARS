@@ -92,4 +92,195 @@
 </div>
 
 
+<div class="web_projects" id="projects">
+    <div class="projects_title">
+        <h1>Реализованные проекты</h1>
+        <p>Многолетние результаты нашей работы, наша гордость</p>
+    </div>
+
+    <div class="projects">
+        {% for i in objects %}
+            <div class="project">
+                <img src="{% static i.images.all.0 %}" class="project_img">
+                <div class="project_data">
+                    <div class="project_info" style="float: left;">
+                        <p class="project_name"> {{ i.name }} </p>
+                        <img src="{% static 'png/city.png' %}" class="city_png"><p class="project_city">{{ i.city }}</p>
+                        <img src="{% static 'png/floors.png' %}"class="floor_png"><p class="project_floor">{{ i.floor }}</p>
+                    </div>
+                    <div style="float: right; font-family: Inter, sans-serif; margin-top: 20px;">
+                        <a href="{% url 'project' i.id %}" class="project_page">перейти к объекту</a><img src="{% static 'png/strelka.png' %}">
+                    </div>
+                </div>
+                
+            </div>
+        {% endfor %}
+    </div>
+
+    <button>Показать ещё</button>
+</div>
+
+
+
+<div class="web_arenda" id="arenda">
+    <div class="arenda_title">
+        <h1>Аренда опалубки</h1>
+        <p>Компания АРС предлагает услуги аренды опалубки</p>
+    </div>
+    <h1>Опалубка для перекрытий</h1>
+
+    <div class="arenda1">
+        <div class="item">
+            <img src="{% static 'png/opalubka1.png' %}">
+            <p>Телескопические стойки (max длина 4.2 м)</p>
+        </div>
+
+        <div class="item">
+            <img src="{% static 'png/opalubka2.png' %}">
+            <p>Треноги</p>
+        </div>
+
+        <div class="item">
+            <img src="{% static 'png/opalubka3.png' %}">
+            <p>Унивилки</p>
+        </div>
+    </div>
+
+    <div class="arenda2">
+        <div class="item">
+            <img src="{% static 'png/opalubka4.png' %}">
+            <p>Ригеля</p>
+        </div>
+
+        <div class="item">
+            <img src="{% static 'png/opalubka5.png' %}">
+            <p>Ламинированная фанера (1220x2440)</p>
+        </div>
+    </div>
+
+    <h1 style="margin-top: 30px;">Опалубка стеновая</h1>
+    <p style="margin-top: -10px; font-weight: 300;">Размеры от 20мм до 120мм, высотой 3000мм</p>
+
+    <div class="arenda1">
+        <div class="item">
+            <img src="{% static 'png/opalubka6.png' %}">
+            <p>Щиты линейные</p>
+        </div>
+
+        <div class="item">
+            <img src="{% static 'png/opalubka7.png' %}">
+            <p>Щиты угловые</p>
+        </div>
+
+        <div class="item">
+            <img src="{% static 'png/opalubka8.png' %}">
+            <p>Щиты угловые шарнирные</p>
+        </div>
+    </div>
+
+    <div class="arenda2">
+        <div class="item">
+            <img src="{% static 'png/opalubka9.png' %}">
+            <p>Щиты угловые распалубочные</p>
+        </div>
+
+        <div class="item">
+            <img src="{% static 'png/opalubka10.png' %}">
+            <p>Угловой элемент опалубки</p>
+        </div>
+    </div>
+
+    <p>На сайте предоставлена не вся имеющаяся у нас опалубка, для уточнения информации
+    позвоните нам или оставьте свои данные</p>
+</div>
+
+
+
+<div class="mobile_arenda" id="mobile_arenda">
+    <div class="mobile_arenda_title">
+        <h1>Аренда опалубки</h1>
+        <p>Компания АРС предлагает услуги аренды опалубки</p>
+    </div>
+    <h1 class="opalubka">Опалубка для перекрытий</h1>
+
+    <div class="mobile_arenda1">
+        <div class="mobile_item">
+            <img src="{% static 'png/opalubka1.png' %}">
+            <p>Телескопические стойки (max длина 4.2 м)</p>
+        </div>
+
+        <div class="mobile_item">
+            <img src="{% static 'png/opalubka2.png' %}">
+            <p>Треноги</p>
+        </div>
+
+        <div class="mobile_item">
+            <img src="{% static 'png/opalubka3.png' %}">
+            <p>Унивилки</p>
+        </div>
+
+        <div class="mobile_item">
+            <img src="{% static 'png/opalubka4.png' %}">
+            <p>Ригеля</p>
+        </div>
+
+        <div class="mobile_item">
+            <img src="{% static 'png/opalubka5.png' %}">
+            <p>Ламинированная фанера (1220x2440)</p>
+        </div>
+    </div>
+
+    <h1 style="margin-top: 30px;" class="opalubka">Опалубка стеновая</h1>
+    <p style="margin-top: -10px; font-weight: 300;">Размеры от 20мм до 120мм, высотой 3000мм</p>
+
+    <div class="mobile_arenda1">
+        <div class="mobile_item">
+            <img src="{% static 'png/opalubka6.png' %}">
+            <p>Щиты линейные</p>
+        </div>
+
+        <div class="mobile_item">
+            <img src="{% static 'png/opalubka7.png' %}">
+            <p>Щиты угловые</p>
+        </div>
+
+        <div class="mobile_item">
+            <img src="{% static 'png/opalubka8.png' %}">
+            <p>Щиты угловые шарнирные</p>
+        </div>
+
+        <div class="mobile_item">
+            <img src="{% static 'png/opalubka9.png' %}">
+            <p>Щиты угловые распалубочные</p>
+        </div>
+
+        <div class="mobile_item">
+            <img src="{% static 'png/opalubka10.png' %}">
+            <p>Угловой элемент опалубки</p>
+        </div>
+    </div>
+
+    <p>На сайте предоставлена не вся имеющаяся у нас опалубка, для уточнения информации
+    позвоните нам или оставьте свои данные</p>
+</div>
+
+
+
+<div class="web_container2">
+    <img src="{% static 'png/foto2.png' %}" class="foto2">
+
+    <div class="data2">
+        <h1>Построим дом вашей мечты вместе?</h1>
+        <p>Оставьте свои контактные данные, чтобы мы связались с вами и ответили на все интересующие вас вопросы</p>
+        <div class="form2">
+            <form method="POST">
+                {% csrf_token %}
+                <input type="text" class="call_me2" placeholder="Ваше имя">
+                <input type="text" class="call_me2" placeholder="Телефон">
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+</div>
+
 {% endblock %}

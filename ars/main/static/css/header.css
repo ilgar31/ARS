@@ -14,7 +14,7 @@ body {
     width: 90%;
     top: 0;
     left: 5%;
-    position: absolute;
+    position: fixed;
     background-color: white;
     border-radius: 0 0 15px 15px;
     height: 80px;
@@ -183,7 +183,7 @@ span {
         width: 90%;
         top: 0;
         left: 5%;
-        position: absolute;
+        position: fixed;
         background-color: white;
         border-radius: 0 0 15px 15px;
         height: 70px;
