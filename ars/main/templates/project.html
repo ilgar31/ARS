@@ -17,15 +17,15 @@
 {% block content %}
 
 <div class="web_project">
-    <a href="../#projects"><img src="{% static 'png/back.png' %}" class="strelka_back"></a><a href="../#projects" class="back">Назад</a>
+    <a href="../#projects" class="strelka_back_a"><img src="{% static 'png/back.png' %}" class="strelka_back"></a><a href="../#projects" class="back">Назад</a>
     <h1 class="name">{{ object.name }}</h1>
     {% for i in object.images.all %}
         <div class="head_images" style="display: none;">
             <div class="mobile_head_images">
                 {% if i == object.images.all.0 %}
-                    <img src="{% static i %}" class="first_img">
+                    <img src="{% static i %}" class="first_img" draggable="false">
                 {% else %}
-                    <img src="{% static i %}" class="first_img">
+                    <img src="{% static i %}" class="first_img" draggable="false">
                 {% endif %}
             </div>
          </div>
@@ -33,7 +33,7 @@
     <div class="images">
         {% for index, i in images %}
             <div class="image_item">
-                <img src="{% static i %}" alt="" onclick="currentImg({{index}})">
+                <img src="{% static i %}" alt="" onclick="currentImg({{index}})" draggable="false">
             </div>
         {% endfor %}
     </div>
@@ -45,9 +45,12 @@
         <p class="data_title" style="margin-top: 30px;">Описание</p>
         <p class="description">{{ object.description }}</p>
     </div>
+
 </div>
 
-
+<div class="back_container">
+    <a href="../#projects"><img src="{% static 'png/back.png' %}" class="strelka_back2"></a><a href="../#projects" class="back2">Назад</a>
+</div>
 
 
 
