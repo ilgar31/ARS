@@ -330,7 +330,11 @@
     }
 }
 
-
+@media screen and (max-width: 400px){
+    .back2 {
+        font-size: 11px;
+    }
+}
 
 
 

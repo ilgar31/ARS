@@ -5,6 +5,10 @@
 <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
 {% endblock %}
 
+{% block script %}
+<script src="{% static 'js/index.js' %}" defer></script>
+{% endblock %}
+
 {% block title %}
 АРС - строим будущее
 {% endblock %}
@@ -64,7 +68,7 @@
     <div class="director">
         <p class="director_title">Генеральный директор</p>
         <img src="{% static 'png/director.png' %}" class="mobile_foto1">
-        <p class="director_name">Имя Фамилия Отчество</p>
+        <p class="director_name">Алиахмедов Кадырбек Алиахмедович</p>
         <p class="about_director">Руководитель компании имеет многолетний опыт работы в сфере строительства жилых и промышленных зданий и сооружений. На данный момент является генеральным директором комнапии ООО «АРС».</p>
     </div>
 </div>
@@ -98,8 +102,8 @@
         <p>Многолетние результаты нашей работы, наша гордость</p>
     </div>
 
-    <div class="projects">
-        {% for i in objects %}
+    <div class="projects" id="web_projects_items">
+        {% for i in web_objects %}
             <div class="project">
                 <img src="{% static i.images.all.0 %}" class="project_img">
                 <div class="project_data">
@@ -117,7 +121,36 @@
         {% endfor %}
     </div>
 
-    <button>Показать ещё</button>
+    <button id="web_more">Показать ещё</button>
+</div>
+
+
+<div class="mobile_projects" id="mobile_projects">
+    <div class="mobile_projects_title">
+        <h1>Реализованные проекты</h1>
+        <p>Многолетние результаты нашей работы, наша гордость</p>
+    </div>
+
+    <div class="mobile_projects_items" id="mobile_projects_items">
+        {% for i in mobile_objects %}
+            <div class="mobile_project">
+                <img src="{% static i.images.all.0 %}" class="mobile_project_img">
+                <div class="mobile_project_data">
+                    <div class="mobile_project_info" style="float: left;">
+                        <p class="mobile_project_name"> {{ i.name }} </p>
+                        <img src="{% static 'png/city.png' %}" class="mobile_city_png"><p class="mobile_project_city">{{ i.city }}</p>
+                        <img src="{% static 'png/floors.png' %}"class="mobile_floor_png"><p class="mobile_project_floor">{{ i.floor }}</p>
+                    </div>
+                    <div style="float: right; font-family: Inter, sans-serif; margin-top: 20px;">
+                        <a href="{% url 'project' i.id %}" class="mobile_project_page">перейти к объекту</a><img src="{% static 'png/strelka.png' %}" class="mobile_st">
+                    </div>
+                </div>
+
+            </div>
+        {% endfor %}
+    </div>
+
+    <button id="mobile_more">Показать ещё</button>
 </div>
 
 
@@ -313,13 +346,13 @@
 
     <div class="bottom_data2">
         <p>Наш офис в Ярославле</p>
-        <p style="color: black;">ул. Свободы, д99</p>
+        <p style="color: black;">ул. Свердлова, д74б, кб.38</p>
     </div>
 
     <div class="bottom_data3">
         <p>Свяжитесь с нами</p>
-        <a href="tel:+79999999999" class="number_bottom">+7 (999) 999 99 99</a><br>
-        <a href="mailto:example@mail.ru" class="email_bottom">example@mail.ru</a>
+        <a href="tel:+79999999999" class="number_bottom">+7 (980) 776 66 59</a><br>
+        <a href="mailto:example@mail.ru" class="email_bottom">stroy-ars76@mail.ru</a>
     </div>
 
 </div>
