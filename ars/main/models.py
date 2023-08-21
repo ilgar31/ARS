@@ -25,3 +25,16 @@ class Object_images(models.Model):
 
     def __str__(self):
         return f'{self.image}'
+
+
+class Message(models.Model):
+    name = models.CharField("Имя", max_length=300)
+    number = models.CharField("Номер", max_length=300)
+
+    def __str__(self):
+        return self.name, self.number
+
+    class Meta:
+        verbose_name = "Заявка"
+        verbose_name_plural = "Заявки"
+

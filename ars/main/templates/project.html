@@ -5,11 +5,108 @@
 <link rel="stylesheet" type="text/css" href="{% static 'css/project.css' %}">
 {% endblock %}
 
+{% block script %}
+<script src="{% static 'js/project.js' %}" defer></script>
+{% endblock %}
+
 {% block title %}
-АРС - строим будущее
+{{ object.name }}
 {% endblock %}
 
 
 {% block content %}
 
+<div class="web_project">
+    <a href="../#projects"><img src="{% static 'png/back.png' %}" class="strelka_back"></a><a href="../#projects" class="back">Назад</a>
+    <h1 class="name">{{ object.name }}</h1>
+    {% for i in object.images.all %}
+        <div class="head_images" style="display: none;">
+            <div class="mobile_head_images">
+                {% if i == object.images.all.0 %}
+                    <img src="{% static i %}" class="first_img">
+                {% else %}
+                    <img src="{% static i %}" class="first_img">
+                {% endif %}
+            </div>
+         </div>
+    {% endfor %}
+    <div class="images">
+        {% for index, i in images %}
+            <div class="image_item">
+                <img src="{% static i %}" alt="" onclick="currentImg({{index}})">
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="project_data">
+        <p class="data_title">Параметры объекта</p>
+        <img src="/static/png/city.png" class="city_png"><p class="project_city">г. Ярославль</p>
+        <img src="/static/png/floors.png" class="floor_png"><p class="project_floor">10 этажей</p>
+        <p class="data_title" style="margin-top: 30px;">Описание</p>
+        <p class="description">{{ object.description }}</p>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="web_container2">
+    <img src="{% static 'png/foto2.png' %}" class="foto2">
+
+    <div class="data2">
+            <h1>Построим дом вашей мечты вместе?</h1>
+            <p>Оставьте свои контактные данные, чтобы мы связались с вами и ответили на все интересующие вас вопросы</p>
+            <div class="form2">
+                <form method="POST">
+                    {% csrf_token %}
+                    <input type="text" class="call_me2" placeholder="Ваше имя">
+                    <input type="text" class="call_me2" placeholder="Телефон">
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+    </div>
+</div>
+
+
+<div class="mobile_container2">
+    <div class="mobile_data2">
+        <img src="{% static 'png/foto2.png' %}" class="mobile_foto2">
+        <h1>Построим дом вашей мечты вместе?</h1>
+        <p>Оставьте свои контактные данные, чтобы мы связались с вами и ответили на все интересующие вас вопросы</p>
+    </div>
+
+    <div class="mobile_form2">
+        <form method="POST">
+            {% csrf_token %}
+            <input type="text" name="name" placeholder="Ваше имя"><br>
+            <input type="text" name="number" placeholder="Телефон"><br>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+</div>
+
+
+
+
+<div class="web_bottom">
+    <div class="bottom_data1">
+        <img src="{% static 'png/logo.png' %}" class="logo_bottom">
+        <p>© 2004-2023 ООО «АРС»</p>
+        <p>Все права защищены</p>
+    </div>
+
+    <div class="bottom_data2">
+        <p>Наш офис в Ярославле</p>
+        <p style="color: black;">ул. Свободы, д99</p>
+    </div>
+
+    <div class="bottom_data3">
+        <p>Свяжитесь с нами</p>
+        <a href="tel:+79999999999" class="number_bottom">+7 (999) 999 99 99</a><br>
+        <a href="mailto:example@mail.ru" class="email_bottom">example@mail.ru</a>
+    </div>
+
+</div>
 {% endblock %}

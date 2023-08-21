@@ -19,8 +19,8 @@
             <p>Хотите обсудить проект? Оставьте свои данные и мы перезвоним</p>
             <form method="POST">
                 {% csrf_token %}
-                <input type="text" class="call_me" placeholder="Ваше имя">
-                <input type="text" class="call_me" placeholder="Телефон">
+                <input type="text" name="name" placeholder="Ваше имя">
+                <input type="text" name="number" placeholder="Телефон">
                 <button type="submit">Отправить</button>
             </form>
         </div>
@@ -294,8 +294,8 @@
     <div class="mobile_form2">
         <form method="POST">
             {% csrf_token %}
-            <input type="text" class="mobile_call_me2" placeholder="Ваше имя"><br>
-            <input type="text" class="mobile_call_me2" placeholder="Телефон"><br>
+            <input type="text" name="name" placeholder="Ваше имя"><br>
+            <input type="text" name="number" placeholder="Телефон"><br>
             <button type="submit">Отправить</button>
         </form>
     </div>

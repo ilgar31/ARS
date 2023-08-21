@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Object, Object_images
+from .models import Object, Object_images, Message
 
 
 class Object_imagesInline(admin.TabularInline):
@@ -10,3 +10,6 @@ class Object_imagesInline(admin.TabularInline):
 @admin.register(Object)
 class ObjectAdmin(admin.ModelAdmin):
     inlines = [Object_imagesInline, ]
+
+
+admin.site.register(Message)
