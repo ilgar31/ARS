@@ -1,9 +1,9 @@
 document.getElementById('menu').addEventListener('click', e=> {
 
-    if (document.getElementById('nav').style.opacity == 0) {
-        document.getElementById('nav').style.opacity = 1;
+    if (document.getElementById('nav').style.display == "none") {
+        document.getElementById('nav').style.display = "block";
     }
     else {
-        document.getElementById('nav').style.opacity = 0;
+        document.getElementById('nav').style.display = 'none';
     }
 })

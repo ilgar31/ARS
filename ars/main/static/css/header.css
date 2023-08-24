@@ -107,7 +107,7 @@ span {
     margin-top: 10px;
     border-radius: 10px;
     box-shadow: 1px 3px 5px 1px rgb(180 180 180 / 20%);
-    opacity: 0;
+    display: none;
     transition: .4s ease-in-out;
 }
 

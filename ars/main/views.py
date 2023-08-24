@@ -35,7 +35,7 @@ def index(request):
                 message.name = name
                 message.number = number
                 message.save()
-                send_mail(f"Имя: {name}         Номер: {number}", "Сайт АРС отправил эту форму", "sunclub.stor@gmail.com", ["elkhan.bagishev2003@gmail.com"])
+                send_mail(f"Имя: {name}         Номер: {number}", "Сайт АРС отправил эту форму", "sunclub.stor@gmail.com", ["ars.yar@bk.ru"])
 
     return render(request, "index.html", {"web_objects": objects[:4], "mobile_objects": objects[:2]})
 
@@ -54,6 +54,6 @@ def project(request, pk):
             message.name = name
             message.number = number
             message.save()
-            send_mail(f"Имя: {name}         Номер: {number}", "Сайт АРС отправил эту форму", "sunclub.stor@gmail.com", ["elkhan.bagishev2003@gmail.com"])
+            send_mail(f"Имя: {name}         Номер: {number}", "Сайт АРС отправил эту форму", "sunclub.stor@gmail.com", ["ars.yar@bk.ru"])
 
     return render(request, "project.html", {"object": object_item, "images": enumerate(images)})
