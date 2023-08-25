@@ -42,8 +42,8 @@
             <p>Хотите обсудить проект? Оставьте свои данные и мы перезвоним</p>
             <form method="POST">
                 {% csrf_token %}
-                <input type="text" placeholder="Ваше имя">
-                <input type="text" placeholder="Телефон">
+                <input type="text" name="name" placeholder="Ваше имя">
+                <input type="text" name="number" placeholder="Телефон">
                 <button type="submit">Отправить</button>
             </form>
         </div>
@@ -90,7 +90,7 @@
     <div class="mobile_director">
         <p class="mobile_director_title">Генеральный директор</p>
         <img src="{% static 'png/director.png' %}" class="mobile_foto1">
-        <p class="mobile_director_name">Имя Фамилия Отчество</p>
+        <p class="mobile_director_name">Алиахмедов Кадырбек Алиахмедович</p>
         <p class="mobile_about_director">Руководитель компании имеет многолетний опыт работы в сфере строительства жилых и промышленных зданий и сооружений. На данный момент является генеральным директором комнапии ООО «АРС».</p>
     </div>
 </div>
@@ -308,8 +308,8 @@
             <div class="form2">
                 <form method="POST">
                     {% csrf_token %}
-                    <input type="text" class="call_me2" placeholder="Ваше имя">
-                    <input type="text" class="call_me2" placeholder="Телефон">
+                    <input type="text" name="name" placeholder="Ваше имя">
+                    <input type="text" name="number" placeholder="Телефон">
                     <button type="submit">Отправить</button>
                 </form>
             </div>
@@ -351,8 +351,8 @@
 
     <div class="bottom_data3">
         <p>Свяжитесь с нами</p>
-        <a href="tel:+79999999999" class="number_bottom">+7 (980) 776 66 59</a><br>
-        <a href="mailto:example@mail.ru" class="email_bottom">stroy-ars76@mail.ru</a>
+        <a href="tel:+79807766659" class="number_bottom">+7 (980) 776 66 59</a><br>
+        <a href="mailto:stroy-ars76@mail.ru" class="email_bottom">stroy-ars76@mail.ru</a>
     </div>
 
 </div>

@@ -64,8 +64,8 @@
             <div class="form2">
                 <form method="POST">
                     {% csrf_token %}
-                    <input type="text" class="call_me2" placeholder="Ваше имя">
-                    <input type="text" class="call_me2" placeholder="Телефон">
+                    <input type="text" name="name" placeholder="Ваше имя">
+                    <input type="text" name="number" placeholder="Телефон">
                     <button type="submit">Отправить</button>
                 </form>
             </div>

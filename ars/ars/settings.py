@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', 'ars-76.ru', '51.250.121.241']
 
+CSRF_TRUSTED_ORIGINS = ['https://*.ars-76.ru']
 
 # Application definition
 
