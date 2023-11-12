@@ -15,15 +15,32 @@
 <div class="web_container">
     <div class="data">
         <h1>СТРОИМ НАДЁЖНЫЕ ДОМА, В КОТОРЫХ ХОЧЕТСЯ ЖИТЬ</h1>
-        <div class="form">
-            <p>Хотите обсудить проект? Оставьте свои данные и мы перезвоним</p>
-            <form method="POST">
-                {% csrf_token %}
-                <input type="text" name="name" placeholder="Ваше имя">
-                <input type="text" name="number" placeholder="Телефон">
-                <button type="submit">Отправить</button>
-            </form>
+        <div class="about_company" style="margin-top: 60px;">
+            <img src="{% static 'png/first_icon.png' %}" class="icon">
+            <p class="icon_text">ЧЛЕН АССОЦИАЦИИ СРО “ЯРСТРОЙ” №1051</p>
         </div>
+        <div class="about_company">
+            <img src="{% static 'png/second_icon.png' %}" class="icon">
+            <p class="icon_text">МНОГОЛЕТНИЙ ОПЫТ В СФЕРЕ СТРОИТЕЛЬСТВА</p>
+        </div>
+        <div class="about_company">
+            <img src="{% static 'png/third_icon.png' %}" class="icon">
+            <p class="icon_text">ОКАЗЫВАЕМ КАЧЕСТВЕННЫЕ УСЛУГИ</p>
+        </div>
+
+
+        <a href="" class="take_offer">Получить коммерческое предложение </a>
+        <a href="" class="tender">Пригласить в тендер</a>
+
+<!--        <div class="form">-->
+<!--            <p>Хотите обсудить проект? Оставьте свои данные и мы перезвоним</p>-->
+<!--            <form method="POST">-->
+<!--                {% csrf_token %}-->
+<!--                <input type="text" name="name" placeholder="Ваше имя">-->
+<!--                <input type="text" name="number" placeholder="Телефон">-->
+<!--                <button type="submit">Отправить</button>-->
+<!--            </form>-->
+<!--        </div>-->
     </div>
 
     <img src="{% static 'png/foto1.png' %}" class="foto1">
@@ -34,15 +51,22 @@
 
     <div class="mobile_data">
         <h1>СТРОИМ НАДЁЖНЫЕ ДОМА, В КОТОРЫХ ХОЧЕТСЯ ЖИТЬ</h1>
-        <div class="mobile_form">
-            <p>Хотите обсудить проект? Оставьте свои данные и мы перезвоним</p>
-            <form method="POST">
-                {% csrf_token %}
-                <input type="text" name="name" placeholder="Ваше имя">
-                <input type="text" name="number" placeholder="Телефон">
-                <button type="submit">Отправить</button>
-            </form>
+
+        <div class="mobile_about_company" style="margin-top: 60px;">
+            <img src="{% static 'png/first_icon.png' %}" class="icon">
+            <p class="icon_text">ЧЛЕН АССОЦИАЦИИ СРО “ЯРСТРОЙ” №1051</p>
         </div>
+        <div class="mobile_about_company">
+            <img src="{% static 'png/second_icon.png' %}" class="icon">
+            <p class="icon_text">МНОГОЛЕТНИЙ ОПЫТ В СФЕРЕ СТРОИТЕЛЬСТВА</p>
+        </div>
+        <div class="mobile_about_company">
+            <img src="{% static 'png/third_icon.png' %}" class="icon">
+            <p class="icon_text">ОКАЗЫВАЕМ КАЧЕСТВЕННЫЕ УСЛУГИ</p>
+        </div>
+
+        <a href="" class="mobile_take_offer">Получить коммерческое предложение </a>
+        <a href="" class="mobile_tender">Пригласить в тендер</a>
     </div>
 </div>
 
