@@ -1,0 +1,93 @@
+{% extends 'header.html' %}
+{% load static %}
+
+{% block link %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/objects.css' %}">
+{% endblock %}
+
+{% block title %}
+Наши лучшие объекты
+{% endblock %}
+
+
+{% block content %}
+
+<div class="web_projects" id="projects">
+    <div class="projects_title">
+        <h1>Реализованные проекты</h1>
+        <p>Многолетние результаты нашей работы, наша гордость</p>
+    </div>
+
+    <div class="projects" id="web_projects_items">
+        {% for i in objects %}
+            <div class="project">
+                <img src="{% static i.images.all.0 %}" class="project_img">
+                <div class="project_data">
+                    <div class="project_info" style="float: left;">
+                        <p class="project_name"> {{ i.name }} </p>
+                        <img src="{% static 'png/city.png' %}" class="city_png"><p class="project_city">{{ i.city }}</p>
+                        <img src="{% static 'png/floors.png' %}"class="floor_png"><p class="project_floor">{{ i.floor }}</p>
+                    </div>
+                    <div style="float: right; font-family: Inter, sans-serif; margin-top: 20px;">
+                        <a href="{% url 'project' i.id %}" class="project_page">перейти к объекту</a><img src="{% static 'png/strelka.png' %}">
+                    </div>
+                </div>
+                
+            </div>
+        {% endfor %}
+    </div>
+
+    <button id="web_more">Показать ещё</button>
+</div>
+
+
+<div class="mobile_projects" id="mobile_projects">
+    <div class="mobile_projects_title">
+        <h1>Реализованные проекты</h1>
+        <p>Многолетние результаты нашей работы, наша гордость</p>
+    </div>
+
+    <div class="mobile_projects_items" id="mobile_projects_items">
+        {% for i in objects %}
+            <div class="mobile_project">
+                <img src="{% static i.images.all.0 %}" class="mobile_project_img">
+                <div class="mobile_project_data">
+                    <div class="mobile_project_info" style="float: left;">
+                        <p class="mobile_project_name"> {{ i.name }} </p>
+                        <img src="{% static 'png/city.png' %}" class="mobile_city_png"><p class="mobile_project_city">{{ i.city }}</p>
+                        <img src="{% static 'png/floors.png' %}"class="mobile_floor_png"><p class="mobile_project_floor">{{ i.floor }}</p>
+                    </div>
+                    <div style="float: right; font-family: Inter, sans-serif; margin-top: 20px;">
+                        <a href="{% url 'project' i.id %}" class="mobile_project_page">перейти к объекту</a><img src="{% static 'png/strelka.png' %}" class="mobile_st">
+                    </div>
+                </div>
+
+            </div>
+        {% endfor %}
+    </div>
+
+    <button id="mobile_more">Показать ещё</button>
+</div>
+
+
+
+<div class="web_bottom">
+    <div class="bottom_data1">
+        <img src="{% static 'png/logo.png' %}" class="logo_bottom">
+        <p>© 2004-2023 ООО «АРС»</p>
+        <p>Все права защищены</p>
+    </div>
+
+    <div class="bottom_data2">
+        <p>Наш офис в Ярославле</p>
+        <p style="color: black;">ул. Свердлова, д74б, кб.38</p>
+    </div>
+
+    <div class="bottom_data3">
+        <p>Свяжитесь с нами</p>
+        <a href="tel:+79807766659" class="number_bottom">+7 (980) 776 66 59</a><br>
+        <a href="stroy-ars76@mail.ru" class="email_bottom">stroy-ars76@mail.ru</a>
+    </div>
+
+</div>
+{% endblock %}

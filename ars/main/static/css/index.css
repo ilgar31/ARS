@@ -539,7 +539,7 @@
     text-decoration: none;
 }
 
-.web_projects button {
+.web_more {
     width: 90%;
     height: 45px;
     border: 0;
@@ -646,7 +646,7 @@
 }
 
 
-.mobile_projects button {
+.mobile_more {
     width: 90%;
     height: 45px;
     border: 0;
@@ -846,7 +846,7 @@
         width: 10px;
     }
 
-    .mobile_projects button {
+    .mobile_more {
         height: 35px;
         font-size: 12px;
     }
@@ -915,7 +915,7 @@
         width: 7px;
     }
 
-    .mobile_projects button {
+    .mobile_more {
         height: 30px;
         font-size: 9px;
     }

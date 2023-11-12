@@ -40,6 +40,11 @@ def index(request):
     return render(request, "index.html", {"web_objects": objects[:4], "mobile_objects": objects[:2]})
 
 
+def objects(request):
+    my_objects = Object.objects.all()
+    return render(request, "objects.html", {"objects": my_objects})
+
+
 def project(request, pk):
     object_item = Object.objects.get(id=pk)
     images = []
