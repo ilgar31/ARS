@@ -14,7 +14,7 @@
 
 <div class="web_projects" id="projects">
     <div class="projects_title">
-        <h1>Реализованные проекты</h1>
+        <h1>Наши лучшие работы</h1>
         <p>Многолетние результаты нашей работы, наша гордость</p>
     </div>
 
@@ -36,14 +36,12 @@
             </div>
         {% endfor %}
     </div>
-
-    <button id="web_more">Показать ещё</button>
 </div>
 
 
 <div class="mobile_projects" id="mobile_projects">
     <div class="mobile_projects_title">
-        <h1>Реализованные проекты</h1>
+        <h1>Наши лучшие работы</h1>
         <p>Многолетние результаты нашей работы, наша гордость</p>
     </div>
 
@@ -65,9 +63,44 @@
             </div>
         {% endfor %}
     </div>
-
-    <button id="mobile_more">Показать ещё</button>
 </div>
+
+
+<div class="web_container2">
+    <img src="{% static 'png/foto2.png' %}" class="foto2">
+
+    <div class="data2">
+            <h1>Построим дом вашей мечты вместе?</h1>
+            <p>Оставьте свои контактные данные, чтобы мы связались с вами и ответили на все интересующие вас вопросы</p>
+            <div class="form2">
+                <form method="POST">
+                    {% csrf_token %}
+                    <input type="text" name="name" placeholder="Ваше имя">
+                    <input type="text" name="number" placeholder="Телефон">
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+    </div>
+</div>
+
+
+<div class="mobile_container2">
+    <div class="mobile_data2">
+        <img src="{% static 'png/foto2.png' %}" class="mobile_foto2">
+        <h1>Построим дом вашей мечты вместе?</h1>
+        <p>Оставьте свои контактные данные, чтобы мы связались с вами и ответили на все интересующие вас вопросы</p>
+    </div>
+
+    <div class="mobile_form2">
+        <form method="POST">
+            {% csrf_token %}
+            <input type="text" name="name" placeholder="Ваше имя"><br>
+            <input type="text" name="number" placeholder="Телефон"><br>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+</div>
+
 
 
 
@@ -80,13 +113,13 @@
 
     <div class="bottom_data2">
         <p>Наш офис в Ярославле</p>
-        <p style="color: black;">ул. Свердлова, д74б, кб.38</p>
+        <p style="color: black;">ул. Свердлова, д.74б, кб.38</p>
     </div>
 
     <div class="bottom_data3">
         <p>Свяжитесь с нами</p>
         <a href="tel:+79807766659" class="number_bottom">+7 (980) 776 66 59</a><br>
-        <a href="stroy-ars76@mail.ru" class="email_bottom">stroy-ars76@mail.ru</a>
+        <a href="mailto:stroy-ars76@mail.ru" class="email_bottom">stroy-ars76@mail.ru</a>
     </div>
 
 </div>

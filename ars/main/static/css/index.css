@@ -545,17 +545,22 @@
     border: 0;
     border-radius: 10px;
     background-color: #FFAB1C;
-    text-align: center;
     cursor: pointer;
     margin-left: 5%;
-    margin-top: 25px;
     margin-bottom: 25px;
+    display: flex;
+    color: black;
+    text-decoration: none;
+    font-family: Inter, sans-serif;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
 }
 
 
 .mobile_projects {
     max-width: 850px;
-    margin: 120px auto;
+    margin: 120px auto 0 auto;
     width: 90%;
     overflow: hidden;
     background-color: white;
@@ -652,11 +657,16 @@
     border: 0;
     border-radius: 10px;
     background-color: #FFAB1C;
-    text-align: center;
     cursor: pointer;
     margin-left: 5%;
-    margin-top: 25px;
     margin-bottom: 25px;
+    display: flex;
+    color: black;
+    text-decoration: none;
+    font-family: Inter, sans-serif;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width: 1520px){
