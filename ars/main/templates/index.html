@@ -71,7 +71,7 @@
 </div>
 
 <div class="web_characteristics">
-    <div class="character" style="width: 300px;">
+    <div class="character1">
         <img src="{% static 'png/1character.png' %}" class="character_icon">
         <div class="block_character">
             <p class="character_title">20 ЛЕТ</p>
@@ -354,14 +354,19 @@
     <div class="data2">
             <h1>Построим дом вашей мечты вместе?</h1>
             <p>Оставьте свои контактные данные, чтобы мы связались с вами и ответили на все интересующие вас вопросы</p>
-            <div class="form2">
-                <form method="POST">
-                    {% csrf_token %}
-                    <input type="text" name="name" placeholder="Ваше имя">
-                    <input type="text" name="number" placeholder="Телефон">
-                    <button type="submit">Отправить</button>
-                </form>
+
+            <div class="buttom_buttons">
+                <a href="" class="take_offer2">Получить коммерческое предложение </a>
+                <a href="" class="tender2">Пригласить в тендер</a>
             </div>
+<!--            <div class="form2">-->
+<!--                <form method="POST">-->
+<!--                    {% csrf_token %}-->
+<!--                    <input type="text" name="name" placeholder="Ваше имя">-->
+<!--                    <input type="text" name="number" placeholder="Телефон">-->
+<!--                    <button type="submit">Отправить</button>-->
+<!--                </form>-->
+<!--            </div>-->
     </div>
 </div>
 
@@ -373,14 +378,20 @@
         <p>Оставьте свои контактные данные, чтобы мы связались с вами и ответили на все интересующие вас вопросы</p>
     </div>
 
-    <div class="mobile_form2">
-        <form method="POST">
-            {% csrf_token %}
-            <input type="text" name="name" placeholder="Ваше имя"><br>
-            <input type="text" name="number" placeholder="Телефон"><br>
-            <button type="submit">Отправить</button>
-        </form>
+    <div class="mobile_buttom_buttons">
+        <a href="" class="mobile_take_offer2">Получить коммерческое предложение </a>
+        <a href="" class="mobile_tender2">Пригласить в тендер</a>
     </div>
+
+
+<!--    <div class="mobile_form2">-->
+<!--        <form method="POST">-->
+<!--            {% csrf_token %}-->
+<!--            <input type="text" name="name" placeholder="Ваше имя"><br>-->
+<!--            <input type="text" name="number" placeholder="Телефон"><br>-->
+<!--            <button type="submit">Отправить</button>-->
+<!--        </form>-->
+<!--    </div>-->
 </div>
 
 
