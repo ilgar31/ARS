@@ -49,6 +49,29 @@
     </nav>
 </div>
 
+
+
+
+<div id="zatemnenie">
+  <div id="okno">
+    <a href="#" class="close">&times;</a>
+      <p class="mes_title">Получить коммерческое предложение</p>
+      <p class="mes_text">Заполните данные формы и мы ответим в ближайшее время</p>
+      <form method="POST">
+          {% csrf_token %}
+          <input type="text" name="company" placeholder="Организация" class="first_input">
+          <input type="text" name="phone" placeholder="+7 (888)-888-88-88" class="first_input">
+          <input type="text" name="name" placeholder="ФИО" class="first_input">
+          <textarea type="text" name="message" placeholder="Добавить сообщение" class="second_input"></textarea>
+          <label for="file" class="file_input"></label>
+          <input type="file" id="file" class="feedback__file" name="file">
+          <p class="file_name" id="file_name"></p>
+          <p class="info_file_text" id="info_file_text">*Если у Вас более одного файла, поместите их все в один архив</p>
+          <button type="submit" class="button_form">Получить предложение</button>
+      </form>
+  </div>
+</div>
+
 {% block content %}
 {% endblock %}
 

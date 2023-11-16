@@ -250,3 +250,174 @@ span {
 }
 
 
+
+
+
+#zatemnenie {
+    background: rgba(102, 102, 102, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: .7s ease;
+}
+
+#okno {
+    width: 430px;
+    height: 670px;
+    text-align: center;
+    padding: 15px;
+    border: 7.5px solid #e1e1e1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -215px;
+    margin-top: -335px;
+    border-radius: 40px;
+    background: #fff;
+    transition: .5s ease;
+}
+
+#zatemnenie:target {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.7s ease;
+}
+
+.close {
+    color: black;
+    text-decoration: none;
+    left: 25px;
+    position: absolute;
+    font-size: 50px;
+    cursor:pointer;
+    background: white;
+    transition: .5s ease;
+}
+
+.close:hover {
+    background: white;
+}
+
+.mes_title {
+    font-weight: 600;
+    font-family: Inter, sans-serif;
+    font-size: 30px;
+    max-width: 75%;
+    margin: auto;
+    margin-block-start: 5px;
+    margin-block-end: 15px;
+}
+
+.mes_text {
+    font-weight: 400;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    max-width: 80%;
+    margin: auto;
+    margin-block-end: 10px;
+}
+
+
+.first_input {
+    width: 90%;
+    height: 40px;
+    border: 2px solid #CFCFCF;
+    margin-top: 15px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15.5px;
+    font-family: Inter, sans-serif;
+}
+
+.second_input {
+    width: 90%;
+    max-width: 90%;
+    min-width: 90%;
+    height: 40px;
+    border: 2px solid #CFCFCF;
+    margin-top: 15px;
+    border-radius: 10px;
+    padding: 10px 10px 60px 10px;
+    font-size: 15.5px;
+    font-family: Inter, sans-serif;
+
+}
+
+.file_input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+.file_input::before {
+    content: 'Прикрепить документацию';
+    border: 3px solid #FFBF51;
+    color: #FFBF51;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 15px auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 40px;
+    border-radius: 10px;
+    -webkit-user-select: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 17px;
+    transition: .5s ease;
+    font-family: Inter, sans-serif;
+}
+
+.feedback__file {
+  display: none;
+}
+
+.file_input:hover::before {
+    background-color: #FFBF51;
+    color: white;
+    transition: .5s ease;
+}
+
+.file_name {
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, sans-serif;
+}
+
+.info_file_text {
+    font-size: 13px;
+    font-weight: 500;
+    max-width: 85%;
+    margin: auto;
+    font-family: Inter, sans-serif;
+}
+
+.button_form {
+    background-color: #FFCB49;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    color: white;
+    margin: 15px auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 50px;
+    border: none;
+    border-radius: 7.5px;
+    -webkit-user-select: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+    transition: .5s ease;
+    font-family: Inter, sans-serif;
+}
+
+.button_form:hover {
+    background-color: #FFD671;
+    transition: .5s ease;
+}
