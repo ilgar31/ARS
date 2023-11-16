@@ -55,19 +55,17 @@
 
 
 
+
 <div class="web_container2">
     <img src="{% static 'png/foto2.png' %}" class="foto2">
 
     <div class="data2">
             <h1>Построим дом вашей мечты вместе?</h1>
             <p>Оставьте свои контактные данные, чтобы мы связались с вами и ответили на все интересующие вас вопросы</p>
-            <div class="form2">
-                <form method="POST">
-                    {% csrf_token %}
-                    <input type="text" name="name" placeholder="Ваше имя">
-                    <input type="text" name="number" placeholder="Телефон">
-                    <button type="submit">Отправить</button>
-                </form>
+
+            <div class="buttom_buttons">
+                <a href="#zatemnenie" class="take_offer2">Получить коммерческое предложение </a>
+                <a href="#zatemnenie2" class="tender2">Пригласить в тендер</a>
             </div>
     </div>
 </div>
@@ -80,15 +78,12 @@
         <p>Оставьте свои контактные данные, чтобы мы связались с вами и ответили на все интересующие вас вопросы</p>
     </div>
 
-    <div class="mobile_form2">
-        <form method="POST">
-            {% csrf_token %}
-            <input type="text" name="name" placeholder="Ваше имя"><br>
-            <input type="text" name="number" placeholder="Телефон"><br>
-            <button type="submit">Отправить</button>
-        </form>
+    <div class="mobile_buttom_buttons">
+        <a href="#zatemnenie" class="mobile_take_offer2">Получить коммерческое предложение </a>
+        <a href="#zatemnenie2" class="mobile_tender2">Пригласить в тендер</a>
     </div>
 </div>
+
 
 
 
